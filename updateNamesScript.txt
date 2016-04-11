@@ -1,0 +1,3 @@
+****Make sure tool is checked in before updating name***
+
+grep --include={*.php,*.html,*.txt} -rnl './' -e "oldName" | xargs -i@ sed -i 's/oldName/newName/g' @
